@@ -1,0 +1,289 @@
+/* University of Chicago Colors */
+:root {
+  --uchicago-maroon: #800000;
+  --uchicago-dark-maroon: #7F1416;
+  --uchicago-light-grey: #F5F5F5;
+  --uchicago-dark-grey: #58595B;
+  --uchicago-white: #FFFFFF;
+  --uchicago-black: #231F20;
+  --uchicago-blue: #0f425c;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--uchicago-light-grey);
+}
+
+/* Header */
+.uchicago-header {
+  background-color: var(--uchicago-maroon);
+  color: var(--uchicago-white);
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--uchicago-white);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--uchicago-white);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* University of Chicago logo styling */
+.chicago-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.chicago-logo svg {
+  width: 42px;
+  height: auto;
+  margin-right: 0.75rem;
+}
+
+.chicago-logo span {
+  color: #7fa8c1; /* Lighter blue color */
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.show-for-medium {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .show-for-medium {
+    display: inline;
+  }
+  
+  .hide-for-medium {
+    display: none;
+  }
+}
+
+/* Cards */
+.uchicago-card {
+  border: 1px solid rgba(0,0,0,0.125);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 4px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.uchicago-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.uchicago-card .card-title {
+  color: var(--uchicago-maroon);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.uchicago-card .card-text {
+  color: var(--uchicago-dark-grey);
+}
+
+.uchicago-card .card-body {
+  padding: 1.5rem;
+}
+
+.uchicago-btn {
+  background-color: var(--uchicago-maroon);
+  border-color: var(--uchicago-maroon);
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+}
+
+.uchicago-btn:hover, .uchicago-btn:focus {
+  background-color: var(--uchicago-dark-maroon);
+  border-color: var(--uchicago-dark-maroon);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.uchicago-footer {
+  background-color: var(--uchicago-dark-grey);
+  color: var(--uchicago-white);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.uchicago-footer a {
+  color: var(--uchicago-white);
+  text-decoration: none;
+}
+
+.uchicago-footer a:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  display: inline-block;
+  color: var(--uchicago-white);
+  margin-left: 1.25rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:first-child {
+  margin-left: 0;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: var(--uchicago-light-grey);
+  text-decoration: none;
+}
+
+.social-icon i {
+  font-size: 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--uchicago-maroon);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Logo Centering */
+.img-fluid.mb-4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+/* Container padding */
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* Links */
+a {
+  color: var(--uchicago-maroon);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--uchicago-dark-maroon);
+  text-decoration: underline;
+}
+
+/* UChicago style for blockquotes */
+blockquote {
+  border-left: 4px solid var(--uchicago-maroon);
+  padding-left: 1rem;
+  color: var(--uchicago-dark-grey);
+  font-style: italic;
+}
+
+/* General Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #343a40;
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Content Styles */
+.census-data-page h1,
+.clean-data-page h1 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.state-selector h2,
+.data-categories h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Button Styles */
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: #343a40;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .state-selector .col-6 {
+    margin-bottom: 1rem;
+  }
+  
+  .data-categories .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}

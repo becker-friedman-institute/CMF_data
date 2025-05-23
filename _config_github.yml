@@ -1,0 +1,3 @@
+# This configuration is used specifically for GitHub Pages deployments
+baseurl: "/CMF_data"
+url: "https://becker-friedman-institute.github.io"

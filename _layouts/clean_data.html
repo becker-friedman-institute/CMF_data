@@ -1,0 +1,27 @@
+---
+layout: base
+---
+<div class="clean-data-page">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="data-categories mb-4">
+    <h2>Data Categories</h2>
+    <div class="row">
+      {% for category in site.data.clean_data_categories %}
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ category.name }}</h5>
+              <p class="card-text">{{ category.description }}</p>
+              <a href="{{ site.baseurl }}/clean-data/{{ category.path }}" class="btn btn-primary">View Data</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</div> 

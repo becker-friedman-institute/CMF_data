@@ -1,0 +1,12 @@
+- name: Manufacturing Data
+  path: manufacturing
+  description: Cleaned and processed manufacturing census data
+- name: Demographic Data
+  path: demographics
+  description: Population and demographic information
+- name: Economic Indicators
+  path: economic
+  description: Economic indicators and statistics
+- name: Geographic Data
+  path: geographic
+  description: Geographic and spatial data 

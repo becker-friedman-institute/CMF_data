@@ -1,0 +1,39 @@
+---
+layout: census_data
+---
+{% assign year = page.name | split: '.' | first %}
+{% assign state_abbr = page.dir | split: '/' | last | upcase %}
+{% assign state = site.data.states | where: "abbr", state_abbr | first %}
+
+# {{ state.name }} Census Data - {{ year }}
+
+## Overview
+This page contains the census data for {{ state.name }} from the year {{ year }}.
+
+## Data Sections
+
+### Manufacturing Statistics
+- Total number of manufacturing establishments
+- Total capital invested
+- Total value of products
+- Number of employees
+
+### Industry Breakdown
+- Agricultural implements
+- Lumber and wood products
+- Flour and grist mills
+- Other manufacturing
+
+## Raw Data
+The raw data for this census can be accessed through the following links:
+
+{% if page.links.size > 0 %}
+### Original Documents
+{% for filename, url in page.links %}
+- [{{ filename }}]({{ url }})
+{% endfor %}
+{% endif %}
+
+### Processed Data
+- [Download CSV](/assets/data/{{ year }}/{{ state_abbr }}_{{ year }}.csv)
+- [View Original Document](/assets/original/{{ year }}/{{ state_abbr }}_{{ year }}.html) 

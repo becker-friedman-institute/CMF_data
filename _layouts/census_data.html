@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<div class="census-data-page">
+  {% if page.state %}
+    {% assign state = site.data.states | where: "abbr", page.state | first %}
+    <div class="mb-3">
+      <a href="{{ site.baseurl }}/{{ page.census_year }}/" class="btn btn-outline-secondary">
+        <i class="fas fa-arrow-left"></i> Back to {{ page.census_year }} Census
+      </a>
+    </div>
+    <h1>{{ state.name }} - {{ page.census_year }} Census Data</h1>
+  {% else %}
+    <h1>{{ page.title }}</h1>
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+</div> 
